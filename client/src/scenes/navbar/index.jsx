@@ -62,12 +62,12 @@ const Navbar = () => {
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween
-            background={neutralLight}
-            borderRadius="9px"
+            backgroundColor={neutralLight}
+            borderRadius="5px"
             gap="3rem"
-            padding="0.1rem 1.5rem"
+            padding="0.1rem 1.2rem"
           >
-            <InputBase placeholder="Search..." background={dark} />
+            <InputBase placeholder="Search..." backgroundColor={dark} />
             <IconButton>
               <Search />
             </IconButton>
