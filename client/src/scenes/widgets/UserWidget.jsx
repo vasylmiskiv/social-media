@@ -2,7 +2,6 @@ import {
   ManageAccountsOutlined,
   EditOutlined,
   LocationOnOutlined,
-  WorkOUtlineOutlined,
   WorkOutlineOutlined,
 } from "@mui/icons-material";
 import { Box, Typography, Divider, useTheme } from "@mui/material";
@@ -29,7 +28,6 @@ const UserWidget = ({ userId, picturePath }) => {
     });
     const data = await response.json();
     setUser(data);
-    console.log(data.picturePath);
   };
 
   useEffect(() => {
@@ -54,7 +52,7 @@ const UserWidget = ({ userId, picturePath }) => {
     <WidgetWrapper>
       <FlexBetween
         gap="0.5rem"
-        p="2rem"
+        p="1rem"
         onClick={() => navigate(`/pofile/${userId}`)}
       >
         <FlexBetween gap="1rem">
@@ -81,7 +79,7 @@ const UserWidget = ({ userId, picturePath }) => {
 
       <Divider />
 
-      <Box p="2rem">
+      <Box p="1rem">
         <Box display="flex" alignItems="center" gap="1rem" mb="0.5rem">
           <LocationOnOutlined fontSize="large" sx={{ color: main }} />
           <Typography color={medium}>{location}</Typography>
@@ -94,7 +92,7 @@ const UserWidget = ({ userId, picturePath }) => {
 
       <Divider />
 
-      <Box p="2rem">
+      <Box p="1rem">
         <FlexBetween mb="0.5rem">
           <Typography color={medium}>Who's viewed your profile</Typography>
           <Typography color={main} fontWeight="500">
@@ -111,7 +109,7 @@ const UserWidget = ({ userId, picturePath }) => {
 
       <Divider />
 
-      <Box p="2rem">
+      <Box p="1rem">
         <Typography fontSize="1rem" color={main} fontWeight="500" mb="1rem">
           Social profiles
         </Typography>

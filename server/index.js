@@ -50,7 +50,7 @@ app.use("/auth", authRoutes);
 app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 mongoose
   .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
