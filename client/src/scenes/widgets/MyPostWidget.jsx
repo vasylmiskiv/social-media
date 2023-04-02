@@ -20,7 +20,7 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import Dropzone from "react-dropzone";
-import FlexBetween from "components/flexBetween";
+import FlexBetween from "components/FlexBetween";
 import UserImage from "components/UserImage";
 import WidgetWrapper from "components/WidgetWrapper";
 import { useState } from "react";
