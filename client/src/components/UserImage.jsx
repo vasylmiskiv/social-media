@@ -4,8 +4,7 @@ const UserImage = ({ image, size = "60px" }) => {
   return (
     <Box width={size} height={size}>
       <img
-        // https:/localhost:5001/assets/ fix it
-        src={image}
+        src={`http://localhost:5001/assets/${image}`}
         alt="user"
         style={{ objectFit: "cover", borderRadius: "50%" }}
         width={size}
