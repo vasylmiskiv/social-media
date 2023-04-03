@@ -1,5 +1,3 @@
-import FlexBetween from "../../components/FlexBetween";
-
 import {
   ChatBubbleOutlineOutlined,
   FavoriteBorderOutlined,
@@ -9,11 +7,13 @@ import {
 
 import { Box, Divider, IconButton, Typography, useTheme } from "@mui/material";
 
-import Friend from "../../components/Friend";
-import WidgetWrapper from "../../components/WidgetWrapper";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setPost } from "state";
+
+import Friend from "../../components/Friend";
+import FlexBetween from "../../components/FlexBetween";
+import WidgetWrapper from "../../components/WidgetWrapper";
 
 const PostWidget = ({
   postId,

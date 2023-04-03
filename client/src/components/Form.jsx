@@ -14,7 +14,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setLogin } from "state";
 import Dropzone from "react-dropzone";
-import FlexBetween from "../../components/FlexBetween";
+import FlexBetween from "./FlexBetween";
 
 const registerSchema = yup.object().shape({
   firstName: yup.string().required("required"),
@@ -61,7 +61,6 @@ const Form = () => {
       formData.append(value, values[value]);
     }
     formData.append("picture", values.picture.name);
-    console.log(formData);
 
     const savedUserResponse = await fetch("/auth/register", {
       method: "POST",
